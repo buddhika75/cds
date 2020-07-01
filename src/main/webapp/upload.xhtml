@@ -139,7 +139,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.shortName}"
                                                          id="namesolsh" 
                                                          a:placeholder = 'Short Name of the Solution (25 Characters)'>
                                             </h:inputText>
@@ -148,7 +148,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.abbreviation}"
                                                          id="babr" 
                                                          a:placeholder = 'Abbreviation of name'>
                                             </h:inputText>
@@ -157,7 +157,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputTextarea value="#{messageController.selected.message}"
+                                            <h:inputTextarea value="#{messageController.selected.description}"
                                                              class="form-control w-100" 
                                                              id="descr" 
                                                              cols="30" rows="9" 
@@ -169,7 +169,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.otherLanguageNames}"
                                                          id="namesoloth" 
                                                          a:placeholder = 'Name in Other Languages'>
                                             </h:inputText>
@@ -178,7 +178,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.category}"
                                                          id="solcat" 
                                                          a:placeholder = 'Solution Category'>
                                             </h:inputText>
@@ -187,7 +187,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.type}"
                                                          id="soltype" 
                                                          a:placeholder = 'Solution Type'>
                                             </h:inputText>
@@ -196,7 +196,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputTextarea value="#{messageController.selected.message}"
+                                            <h:inputTextarea value="#{messageController.selected.functions}"
                                                              class="form-control w-100" 
                                                              id="solfunc" 
                                                              cols="30" rows="9" 
@@ -208,7 +208,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.implementation}"
                                                          id="impscope" 
                                                          a:placeholder = 'Implementation'>
                                             </h:inputText>
@@ -217,7 +217,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="depcountry" 
                                                          a:placeholder = 'County/ies Deployed in (if any)'>
                                             </h:inputText>
@@ -226,7 +226,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="oplang" 
                                                          a:placeholder = 'Operational Language'>
                                             </h:inputText>
@@ -235,7 +235,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="internatn" 
                                                          a:placeholder = 'Internationalization'>
                                             </h:inputText>
@@ -244,7 +244,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="licence" 
                                                          a:placeholder = 'License Type'>
                                             </h:inputText>
@@ -253,7 +253,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="orgname" 
                                                          a:placeholder = 'Owner Organisation name'>
                                             </h:inputText>
@@ -271,7 +271,7 @@
 
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.phoneNumber}"
                                                          id="orgphone" 
                                                          a:placeholder = 'Organisation phone'>
                                             </h:inputText>
@@ -280,7 +280,7 @@
 									
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <h:inputText class="form-control"  id="orgfax"   value="#{messageController.selected.subject}" 
+                                            <h:inputText class="form-control"  id="orgfax"   value="#{messageController.selected.completeComments}" 
                                                          a:placeholder = 'Organisation fax'>
                                             </h:inputText>
                                         </div>
@@ -288,7 +288,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.retireComments}"
                                                          id="orgemail" 
                                                          a:placeholder = 'Organisation email'>
                                             </h:inputText>
@@ -298,7 +298,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.website}"
                                                          id="orgwebsite" 
                                                          a:placeholder = 'Organisation website'>
                                             </h:inputText>
@@ -307,7 +307,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="linkps" 
                                                          a:placeholder = 'Application link for Play store'>
                                             </h:inputText>
@@ -316,7 +316,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="linkas" 
                                                          a:placeholder = 'Application link for App store'>
                                             </h:inputText>
@@ -325,7 +325,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="linkoth" 
                                                          a:placeholder = 'Application link (other)'>
                                             </h:inputText>
@@ -334,7 +334,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="linkdemo" 
                                                          a:placeholder = 'Link/s to demo'>
                                             </h:inputText>
@@ -343,7 +343,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="linksource" 
                                                          a:placeholder = 'Link to source code'>
                                             </h:inputText>
@@ -352,7 +352,7 @@
 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                            <h:inputText class="form-control" value="#{messageController.selected.completeComments}"
                                                          id="linkref" 
                                                          a:placeholder = 'Reference Link'>
                                             </h:inputText>

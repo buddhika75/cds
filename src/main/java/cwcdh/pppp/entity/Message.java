@@ -54,6 +54,16 @@ public class Message implements Serializable {
     private String website;
     private String phoneNumber;
     private String subject;
+    private String shortName;
+    private String abbreviation;
+    @Lob
+    private String implementation;
+    private String otherLanguageNames;
+    private String category;
+    private String type;
+     @Lob
+    private String functions;
+    
     
     @ManyToOne
     private Solution solution;
@@ -393,6 +403,62 @@ public class Message implements Serializable {
 
     public void setSolution(Solution solution) {
         this.solution = solution;
+    }
+
+    public String getShortName() {
+        return shortName;
+    }
+
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
+    }
+
+    public String getAbbreviation() {
+        return abbreviation;
+    }
+
+    public void setAbbreviation(String abbreviation) {
+        this.abbreviation = abbreviation;
+    }
+
+    public String getImplementation() {
+        return implementation;
+    }
+
+    public void setImplementation(String implementation) {
+        this.implementation = implementation;
+    }
+
+    public String getOtherLanguageNames() {
+        return otherLanguageNames;
+    }
+
+    public void setOtherLanguageNames(String otherLanguageNames) {
+        this.otherLanguageNames = otherLanguageNames;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getFunctions() {
+        return functions;
+    }
+
+    public void setFunctions(String functions) {
+        this.functions = functions;
     }
 
     
