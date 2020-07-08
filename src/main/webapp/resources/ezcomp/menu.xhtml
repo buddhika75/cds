@@ -35,6 +35,10 @@
                     <p:menuitem ajax="false" value="List" action="#{messageController.toViewCaseStudiesForUsers()}" />
                     <p:menuitem ajax="false" value="Create New" action="#{messageController.toCreateNewCaseStudy()}"  />
                 </p:submenu>
+                
+                 <p:submenu label="Submissions"  >
+                     <p:menuitem ajax="false" value="List" action="#{messageController.toViewSubmissionsForUsers()}" />
+                </p:submenu>
 
                 <p:submenu label="Settings"   >
                     <p:menuitem value="Change My Password" action="#{webUserController.toChangeMyPassword()}"  />

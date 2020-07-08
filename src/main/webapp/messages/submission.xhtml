@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <body>
+
+        <ui:composition template="./../template.xhtml">
+
+            <ui:define name="content">
+
+                <h:form >
+
+                    <p:panelGrid columns="1" style="width: 100%;" >
+                        <f:facet name="header" >
+                            <p:outputLabel value="Submissions" ></p:outputLabel>
+                        </f:facet>
+
+
+
+
+                        <p:panelGrid columns="2">
+
+
+
+
+                            <p:outputLabel value="Name" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.name}"
+                                         id="name" 
+                                         a:placeholder = 'Enter your name'>
+                            </h:inputText>
+
+
+
+                            <p:outputLabel value="Email" ></p:outputLabel>
+                            <h:inputText class="form-control"  id="email"   value="#{messageController.selected.email}" 
+                                         a:placeholder = 'Enter email address'>
+                            </h:inputText>
+
+
+                            <p:outputLabel value="Name of Solution" ></p:outputLabel>
+
+                            <h:inputText class="form-control" value="#{messageController.selected.subject}"
+                                         id="namesol" 
+                                         a:placeholder = 'Name of the Solution'>
+                            </h:inputText>
+
+
+
+                            <p:outputLabel value="Short name" ></p:outputLabel>
+
+                            <h:inputText class="form-control" value="#{messageController.selected.shortName}"
+                                         id="namesolsh" 
+                                         a:placeholder = 'Short Name of the Solution (25 Characters)'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Abbreviation" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.abbreviation}"
+                                         id="babr" 
+                                         a:placeholder = 'Abbreviation of name'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Descreption" ></p:outputLabel>
+                            <h:inputTextarea value="#{messageController.selected.description}"
+                                             class="form-control w-100" 
+                                             id="descr" 
+                                             cols="30" rows="9" 
+                                             a:placeholder = 'Description of Solution'>
+
+                            </h:inputTextarea>
+
+
+
+
+                            <p:outputLabel value="Name in other languages" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.otherLanguageNames}"
+                                         id="namesoloth" 
+                                         a:placeholder = 'Name in Other Languages'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Category" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.category}"
+                                         id="solcat" 
+                                         a:placeholder = 'Solution Category'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Type" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.type}"
+                                         id="soltype" 
+                                         a:placeholder = 'Solution Type'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Functions" ></p:outputLabel>
+                            <h:inputTextarea value="#{messageController.selected.functions}"
+                                             class="form-control w-100" 
+                                             id="solfunc" 
+                                             cols="30" rows="9" 
+                                             a:placeholder = 'Solution Functions'>
+
+                            </h:inputTextarea>
+
+
+
+
+                            <p:outputLabel value="Implementations" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.implementation}"
+                                         id="impscope" 
+                                         a:placeholder = 'Implementation'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Countries" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.countries}"
+                                         id="depcountry" 
+                                         a:placeholder = 'County/ies Deployed in (if any)'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Languages" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.languages}"
+                                         id="oplang" 
+                                         a:placeholder = 'Operational Language'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Internationalization" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.internationalization}"
+                                         id="internatn" 
+                                         a:placeholder = 'Internationalization'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="License" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.licenseType}"
+                                         id="licence" 
+                                         a:placeholder = 'License Type'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Organization" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.orgName}"
+                                         id="orgname" 
+                                         a:placeholder = 'Owner Organisation name'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Address" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.orgAddress}"
+                                         id="orgadd" 
+                                         a:placeholder = 'Organisation address'>
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Phone" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.orgPhone}"
+                                         id="orgphone" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Fax" ></p:outputLabel>
+                            <h:inputText class="form-control"  id="orgfax"   value="#{messageController.selected.orgFax}" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Email" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.orgEmail}"
+                                         id="orgemail" 
+                                         >
+                            </h:inputText>
+
+
+
+
+
+                            <p:outputLabel value="Website" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.website}"
+                                         id="orgwebsite" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Playstore" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.playSoterLink}"
+                                         id="linkps" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="App Store Link" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.appStoreLink}"
+                                         id="linkas" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Application Link" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.applicationLink}"
+                                         id="linkoth" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Demo Link" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.linkToDemo}"
+                                         id="linkdemo" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Sourcecode Link" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.linkToSourceCode}"
+                                         id="linksource" 
+                                         >
+                            </h:inputText>
+
+
+
+
+                            <p:outputLabel value="Ref. Link" ></p:outputLabel>
+                            <h:inputText class="form-control" value="#{messageController.selected.referenceLink}"
+                                         id="linkref" 
+                                         >
+                            </h:inputText>
+
+
+
+
+
+                        </p:panelGrid>
+
+
+
+
+                    </p:panelGrid>
+
+                </h:form>
+
+                
+                <br/>
+                <br/>
+                <br/>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

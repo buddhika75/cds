@@ -62,6 +62,13 @@ public class MessageController implements Serializable {
         return "/messages/casestudy";
     }
 
+    public String toViewSubmission() {
+        if (selected == null) {
+            return "";
+        }
+        return "/messages/submission";
+    }
+    
     public String toViewCaseStudyForPublic() {
         if (selected == null) {
             return "";
@@ -72,6 +79,11 @@ public class MessageController implements Serializable {
     public String toViewCaseStudiesForUsers() {
         items = listMessages(MessageType.Cas_Study);
         return "/messages/casestudies";
+    }
+    
+    public String toViewSubmissionsForUsers() {
+        items = listMessages(MessageType.Project_Submission);
+        return "/messages/submissions";
     }
 
     public String toViewCaseStudiesForPublic() {

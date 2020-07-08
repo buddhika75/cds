@@ -89,6 +89,23 @@ public class Message implements Serializable {
     String rtfText;
     @Lob
     String plainText;
+    private String referenceLink;
+    private String linkToSourceCode;
+    private String linkToDemo;
+    private String applicationLink;
+    private String appStoreLink;
+    private String playSoterLink;
+    private String orgEmail;
+    private String orgFax;
+    private String orgPhone;
+    private String orgAddress;
+    private String orgName;
+    private String licenseType;
+    private String internationalization;
+    private String languages;
+    private String countries;
+    
+    
 
     /*
     Completing Properties
@@ -448,6 +465,8 @@ public class Message implements Serializable {
     public String getType() {
         return type;
     }
+    
+    
 
     public void setType(String type) {
         this.type = type;
@@ -459,6 +478,126 @@ public class Message implements Serializable {
 
     public void setFunctions(String functions) {
         this.functions = functions;
+    }
+
+    public String getReferenceLink() {
+        return referenceLink;
+    }
+
+    public void setReferenceLink(String referenceLink) {
+        this.referenceLink = referenceLink;
+    }
+
+    public String getLinkToSourceCode() {
+        return linkToSourceCode;
+    }
+
+    public void setLinkToSourceCode(String linkToSourceCode) {
+        this.linkToSourceCode = linkToSourceCode;
+    }
+
+    public String getLinkToDemo() {
+        return linkToDemo;
+    }
+
+    public void setLinkToDemo(String linkToDemo) {
+        this.linkToDemo = linkToDemo;
+    }
+
+    public String getApplicationLink() {
+        return applicationLink;
+    }
+
+    public void setApplicationLink(String applicationLink) {
+        this.applicationLink = applicationLink;
+    }
+
+    public String getAppStoreLink() {
+        return appStoreLink;
+    }
+
+    public void setAppStoreLink(String appStoreLink) {
+        this.appStoreLink = appStoreLink;
+    }
+
+    public String getPlaySoterLink() {
+        return playSoterLink;
+    }
+
+    public void setPlaySoterLink(String playSoterLink) {
+        this.playSoterLink = playSoterLink;
+    }
+
+    public String getOrgEmail() {
+        return orgEmail;
+    }
+
+    public void setOrgEmail(String orgEmail) {
+        this.orgEmail = orgEmail;
+    }
+
+    public String getOrgFax() {
+        return orgFax;
+    }
+
+    public void setOrgFax(String orgFax) {
+        this.orgFax = orgFax;
+    }
+
+    public String getOrgPhone() {
+        return orgPhone;
+    }
+
+    public void setOrgPhone(String orgPhone) {
+        this.orgPhone = orgPhone;
+    }
+
+    public String getOrgAddress() {
+        return orgAddress;
+    }
+
+    public void setOrgAddress(String orgAddress) {
+        this.orgAddress = orgAddress;
+    }
+
+    public String getOrgName() {
+        return orgName;
+    }
+
+    public void setOrgName(String orgName) {
+        this.orgName = orgName;
+    }
+
+    public String getLicenseType() {
+        return licenseType;
+    }
+
+    public void setLicenseType(String licenseType) {
+        this.licenseType = licenseType;
+    }
+
+    public String getInternationalization() {
+        return internationalization;
+    }
+
+    public void setInternationalization(String internationalization) {
+        this.internationalization = internationalization;
+    }
+
+    public String getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String languages) {
+        this.languages = languages;
+    }
+
+    public String getCountries() {
+        return countries;
+    }
+
+    public void setCountries(String countries) {
+        this.countries = countries;
     }
 
     
